@@ -336,3 +336,71 @@ body.is-loaded{
     animation: none !important;
   }
 }
+
+/* ===== Spotlight Sweep Effect ===== */
+.hero{
+  position: relative;
+  overflow: hidden;
+}
+
+/* the moving spotlight */
+.hero::after{
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: -60%;
+  width: 160%;
+  height: 160%;
+  pointer-events: none;
+
+  /* spotlight cone */
+  background: radial-gradient(
+    300px 180px at 0% 50%,
+    rgba(255,255,255,0.10),
+    rgba(255,36,58,0.15),
+    rgba(255,36,58,0.06),
+    transparent 70%
+  );
+
+  filter: blur(8px);
+  transform: rotate(-12deg);
+  opacity: 0;
+
+  animation: spotlightSweep 2.2s cubic-bezier(.22,.61,.36,1) forwards;
+}
+
+/* animation */
+@keyframes spotlightSweep{
+  0%{
+    transform: translateX(-40%) rotate(-12deg);
+    opacity: 0;
+  }
+  15%{
+    opacity: 1;
+  }
+  70%{
+    opacity: 1;
+  }
+  100%{
+    transform: translateX(40%) rotate(-12deg);
+    opacity: 0;
+  }
+}
+
+/* Light mode tweak (so it doesn't overpower) */
+[data-theme="light"] .hero::after{
+  background: radial-gradient(
+    300px 180px at 0% 50%,
+    rgba(255,36,58,0.12),
+    rgba(255,36,58,0.06),
+    transparent 70%
+  );
+}
+
+/* Accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .hero::after{
+    animation: none;
+    display: none;
+  }
+}
