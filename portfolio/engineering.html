@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Engineering | Taylor (TJ) Mason</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <div class="name">Taylor “TJ” Mason</div>
+        <div class="tag">Engineering Portfolio</div>
+      </a>
+
+      <nav class="links" aria-label="Primary navigation">
+        <a href="engineering.html">Engineering</a>
+        <a href="music.html">Music</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn" type="button">Dark Mode</button>
+        <a class="btn primary" href="assets/resume/TjMason_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="card">
+        <h2>Engineering</h2>
+        <p>
+          Projects focused on software development, data structures, and systems thinking. Each card can link to GitHub, a writeup, or a demo.
+        </p>
+        <div style="height:12px"></div>
+        <div class="row">
+          <span class="tag">Java</span>
+          <span class="tag">C</span>
+          <span class="tag">Git</span>
+          <span class="tag">VS Code</span>
+          <span class="tag">Eclipse</span>
+          <span class="tag">AutoCAD</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Featured Projects</h2>
+      <div class="grid-3">
+        <div class="card">
+          <div class="project-title">
+            <h3>TripPoint GPS Route Analyzer</h3>
+            <span class="small">Java</span>
+          </div>
+          <p class="small">
+            Analyzed GPS trip data using custom classes, parsing, route metrics, and heuristics. Extended toward GUI mapping integration.
+          </p>
+          <div style="height:12px"></div>
+          <div class="row">
+            <a class="btn" href="#" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="#">Writeup</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="project-title">
+            <h3>Custom ArrayList & LinkedList</h3>
+            <span class="small">Java • DS&A</span>
+          </div>
+          <p class="small">
+            Built custom generic data structures with resizing/nodes, then benchmarked performance vs Java API at 10M elements.
+          </p>
+          <div style="height:12px"></div>
+          <div class="row">
+            <a class="btn" href="#" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="#">Benchmark Notes</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="project-title">
+            <h3>Fractal Tree GUI Generator</h3>
+            <span class="small">Java Swing</span>
+          </div>
+          <p class="small">
+            Recursive fractal renderer with adjustable depth/angle, random variation, and a polished GUI scene background.
+          </p>
+          <div style="height:12px"></div>
+          <div class="row">
+            <a class="btn" href="#" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="#">Screenshots</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="project-title">
+            <h3>OU Community Gardens Smart Irrigation</h3>
+            <span class="small">IoT • Embedded</span>
+          </div>
+          <p class="small">
+            Concept design for distributed sensors + smart irrigation: moisture/temperature sensing, wireless nodes, dashboard, and scalable plots.
+          </p>
+          <div style="height:12px"></div>
+          <div class="row">
+            <a class="btn" href="#">Proposal PDF</a>
+            <a class="btn" href="#">Diagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2>Skills & Tools</h2>
+        <div class="grid-2">
+          <div>
+            <p class="small"><b>Languages</b>: Java, C</p>
+            <p class="small"><b>Tools</b>: Git, VS Code, Eclipse, AutoCAD</p>
+          </div>
+          <div>
+            <p class="small"><b>Domains</b>: Data Structures, OOP, Embedded/IoT Concepts, Digital Logic</p>
+            <p class="small"><b>Next</b>: Add HTML/CSS/JS projects as this site grows.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner container">
+        <div class="small">© <span id="year"></span> Taylor “TJ” Mason</div>
+        <div class="small"><a href="index.html">Home</a> · <a href="contact.html">Contact</a></div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

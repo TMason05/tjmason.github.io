@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Taylor (TJ) Mason</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <div class="name">Taylor “TJ” Mason</div>
+        <div class="tag">About</div>
+      </a>
+
+      <nav class="links" aria-label="Primary navigation">
+        <a href="engineering.html">Engineering</a>
+        <a href="music.html">Music</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn" type="button">Dark Mode</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="card">
+        <h2>My Story</h2>
+        <p class="small">
+          I’m a University of Oklahoma student building my path in both computer engineering and music. I love the structure and problem-solving of engineering,
+          and I bring that same discipline into percussion—especially through ensemble performance, teaching, and DCI experience.
+        </p>
+        <div style="height:14px"></div>
+        <p class="small">
+          This site is a single place to explore my engineering projects (code, systems thinking, and technical growth) and my music work (performances, recordings,
+          and teaching).
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2>Highlights</h2>
+        <p class="small"><b>University of Oklahoma</b>: Pride of Oklahoma • OU Percussion Studio • Concert/Orchestra/Opera ensembles</p>
+        <p class="small"><b>DCI</b>: Colt Cadets (2023) • Genesis (2024) • Spirit of Atlanta (2026)</p>
+        <p class="small"><b>Teaching</b>: Private lessons + Front Ensemble Coordinator / Sound Engineer (Washington HS, 2025–2027)</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner container">
+        <div class="small">© <span id="year"></span> Taylor “TJ” Mason</div>
+        <div class="small"><a href="index.html">Home</a> · <a href="contact.html">Contact</a></div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

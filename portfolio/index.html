@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Taylor (TJ) Mason | Engineer & Percussionist</title>
+  <meta name="description" content="Aspiring computer engineer and percussionist—engineering projects, performances, teaching, and contact." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <div class="name">Taylor “TJ” Mason</div>
+        <div class="tag">Engineer • Percussionist • Educator</div>
+      </a>
+
+      <nav class="links" aria-label="Primary navigation">
+        <a href="engineering.html">Engineering</a>
+        <a href="music.html">Music</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn" type="button">Dark Mode</button>
+        <a class="btn primary" href="assets/resume/TjMason_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="card">
+          <span class="badge">Aspiring Computer Engineer + Percussionist</span>
+          <h1 class="h-title">Engineer & Musician</h1>
+          <p class="h-sub">
+            I’m an aspiring computer engineer and percussionist who builds tech projects and creates music—this site showcases both.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="engineering.html">View Engineering Portfolio</a>
+            <a class="btn" href="music.html">View Music Portfolio</a>
+            <a class="btn" href="contact.html">Contact</a>
+          </div>
+
+          <div style="height:14px"></div>
+
+          <div class="kv">
+            <div class="row">
+              <span class="tag">Java</span>
+              <span class="tag">C</span>
+              <span class="tag">Data Structures</span>
+              <span class="tag">Embedded / IoT</span>
+              <span class="tag">Front Ensemble</span>
+              <span class="tag">DCI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="stat">
+            <div class="label">School</div>
+            <div class="value">University of Oklahoma</div>
+          </div>
+          <div style="height:12px"></div>
+          <div class="stat">
+            <div class="label">Ensembles</div>
+            <div class="value">Pride of Oklahoma • OU Percussion Studio • Concert/Orchestra/Opera</div>
+          </div>
+          <div style="height:12px"></div>
+          <div class="stat">
+            <div class="label">DCI</div>
+            <div class="value">Colt Cadets (2023) • Genesis (2024) • Spirit of Atlanta (2026)</div>
+          </div>
+          <div style="height:12px"></div>
+          <div class="stat">
+            <div class="label">Teaching</div>
+            <div class="value">Private lessons + Front Ensemble Coordinator / Sound Engineer (Washington HS, 2025–2027)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <div class="card">
+          <h2>Engineering</h2>
+          <p>Featured projects + skills — built to be recruiter-friendly and easy to scan.</p>
+          <div style="height:12px"></div>
+
+          <div class="project-title">
+            <h3>TripPoint GPS Route Analyzer</h3>
+            <span class="small">Java • OOP • Data parsing</span>
+          </div>
+          <p class="small">Analyzed GPS trip data with custom classes, heuristics, and a path toward GUI mapping.</p>
+
+          <div style="height:14px"></div>
+          <a class="btn primary" href="engineering.html">Explore Engineering</a>
+        </div>
+
+        <div class="card">
+          <h2>Music</h2>
+          <p>Performances, recordings, teaching info, and ensembles — plus a clean way to contact me.</p>
+          <div style="height:12px"></div>
+
+          <div class="project-title">
+            <h3>Featured Performance</h3>
+            <span class="small">Video / Audio embeds</span>
+          </div>
+          <p class="small">Drop in YouTube/SoundCloud links with short context blurbs.</p>
+
+          <div style="height:14px"></div>
+          <a class="btn" href="music.html">Explore Music</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container card">
+        <h2>Quick Links</h2>
+        <div class="kv">
+          <div class="row">
+            <a class="btn" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            <a class="btn" href="contact.html">Email / Contact Form</a>
+          </div>
+          <p class="small">Replace these with your real links.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="small">© <span id="year"></span> Taylor “TJ” Mason</div>
+        <div class="small">
+          <a href="engineering.html">Engineering</a> ·
+          <a href="music.html">Music</a> ·
+          <a href="about.html">About</a> ·
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
