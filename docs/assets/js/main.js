@@ -23,3 +23,13 @@
     });
   }
 })();
+
+// Page load fade/slide
+window.addEventListener("load", () => {
+  document.body.classList.add("is-loaded");
+
+  // Optional: stagger reveal any elements with .reveal
+  document.querySelectorAll(".reveal").forEach((el, i) => {
+    setTimeout(() => el.classList.add("show"), 120 * i);
+  });
+});
