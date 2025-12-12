@@ -275,3 +275,51 @@ p{ color: var(--muted); line-height:1.6; margin:0; }
   .h-title{ font-size: 32px; }
   .links{ display:none; } /* simple for now; we can add a mobile menu later */
 }
+
+/* ===== Page load animation ===== */
+body{
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 650ms ease, transform 650ms ease;
+}
+
+body.is-loaded{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Hero glow pulse ===== */
+@keyframes glowPulse {
+  0%   { box-shadow: var(--shadowSoft); }
+  50%  { box-shadow: var(--shadowSoft), var(--shadowGlow); }
+  100% { box-shadow: var(--shadowSoft); }
+}
+
+/* Apply to the first hero card on the home page (safe + subtle) */
+.hero .card:first-child{
+  animation: glowPulse 1400ms ease-in-out 1;
+}
+
+/* ===== Stagger reveal (optional) ===== */
+.reveal{
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 700ms ease, transform 700ms ease;
+}
+
+.reveal.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Reduced motion support (important) */
+@media (prefers-reduced-motion: reduce){
+  body, .reveal{
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  .hero .card:first-child{
+    animation: none !important;
+  }
+}
